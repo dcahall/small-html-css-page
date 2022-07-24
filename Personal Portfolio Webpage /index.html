@@ -5,15 +5,19 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<link rel="stylesheet" href="./styles.css"/>
 		<link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    />
 		<title>Personal Portfolio Webpage</title>
 	</head>
 	<body>
 		<head>
-			<nav class="navbar">
+			<nav id="navbar">
 				<ul>
 					<li><a class="nav-link" href="#welcome-section" >About</a></li>
 					<li><a class="nav-link" href="#projects">Work</a></li>
-					<li><a class="nav-link" href="contact">Contact</a></li>
+					<li><a class="nav-link" href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</head>
@@ -24,31 +28,57 @@
 		<section id="projects">
 			<h2>These are some of my projects</h2>
 			<div class="project-grid">
-				<a class="project-tile" 
+				<a id="profile-link" 
+          class="project-tile"
 					href="https://github.com/dcahall/HTML_CSS_freeCodeCamp/tree/main/Survey%20form"
           target="_blank">
           <img src="./product_img/survey_form.png" alt="Survey form">
-          <p class="project-invisible">&lt;<span>Survey form</span>/&gt;</p>
+          <p class="project-title"><span class="brackets">&lt;</span>
+            Survey form
+            <span class="brackets">/&gt;</span>
+          </p>
         </a>
-        <a class="project-tile" 
+        <a id="profile-link" 
+          class="project-tile"
 					href="https://github.com/dcahall/HTML_CSS_freeCodeCamp/tree/main/Tribute%20page"
           target="_blank">
           <img src="./product_img/tribute_page.png" alt="Tribute page">
-          <span class="project-invisible">&lt;<span>Tribute page</span>/&gt;</span>
+          <p class="project-title"><span class="brackets">&lt;</span>
+            Tribute page
+            <span class="brackets">/&gt;</span>
+          </p>
         </a>
-        <a class="project-tile" 
+        <a id="profile-link"
+          class="project-tile"
 					href="https://github.com/dcahall/HTML_CSS_freeCodeCamp/tree/main/Documentation%20page"
           target="_blank">
           <img src="./product_img/documentation_page.png" alt="Documentation page">
-          <span class="project-invisible">&lt;<span>Documentation page</span>/&gt;</span>
+          <p class="project-title"><span class="brackets">&lt;</span>
+            Documentation page
+            <span class="brackets">/&gt;</span>
+          </p>
         </a>
-        <a class="project-tile" 
+        <a id="profile-link"
+          class="project-tile"
 					href="https://github.com/dcahall/HTML_CSS_freeCodeCamp/tree/main/Product%20landing%20page"
           target="_blank">
           <img src="./product_img/product_landing_page.png" alt="Product landing page">
-          <span class="project-invisible">&lt;<span>Product landing page</span>/&gt;</span>
+          <p class="project-title"><span class="brackets">&lt;</span>
+            Product landing page
+            <span class="brackets">/&gt;</span>
+          </p>
         </a>
 			</div>
+      <div id="button">
+        <a href="https://github.com/dcahall"
+          target="_blank">
+          <p>Show all <i class="fas fa-chevron-right"></i></p>
+        </a>
+      </div>
 		</section>
+    <section id="contact">
+      <h1>Let's work together...</h1>
+      <p>How</p>
+    </section>
 	</body>
 </html>
