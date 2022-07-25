@@ -74,7 +74,8 @@ p {
 
 #welcome-section {
 	height: 100vh;
-	width: 100%;
+	max-width: 100%;
+  padding: 0 2rem;
 	background: linear-gradient( 90deg,
 		rgb(49, 49, 49) 0%,
 		#212123) 100%;
@@ -99,7 +100,7 @@ h1 {
 }
 
 /************************************************/
-/*             PROJECTS SECTION STYLE            */
+/*             PROJECTS SECTION STYLE           */
 /************************************************/
 
 #projects {
@@ -172,3 +173,44 @@ h1 {
   transform: translateX(0.3rem);
 }
 
+/************************************************/
+/*             CONTACT SECTION STYLE            */
+/************************************************/
+
+#contact {
+  height: 100vh;
+  max-width: 100%;
+  padding: 0 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--main-gray);
+}
+
+.contact-links {
+  margin-top: 6rem;
+}
+
+.contact-links a {
+  padding: 0 3rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.contact-header p {
+  margin-top: 1rem;
+  font-style: italic;
+  font-weight: 100;
+}
+
+@media (max-width: 700px) {
+  .contact-links {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-links a{
+    margin-top: 2rem;
+  }
+}
