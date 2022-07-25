@@ -197,6 +197,12 @@ h1 {
   padding: 0 3rem;
   font-size: 2.5rem;
   font-weight: 400;
+  display: inline-block;
+  transition: transform 0.3s ease-out;
+}
+
+.contact-links a:hover {
+  transform: translateY(1rem);
 }
 
 .contact-header p {
